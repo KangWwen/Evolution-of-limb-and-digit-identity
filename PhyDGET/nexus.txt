@@ -1,0 +1,12 @@
+#NEXUS
+
+Begin trees; [Treefile created using EvolView]
+	Translate
+		1 Ostrich,
+		2 Emu,
+		3 Chicken,
+		4 Siamese,
+		5 Turtle
+;
+	 tree tree_1 = [&R] ((((1:0.25,2:0.25):0.25[INT4],3:0.5):0.25[INT3],4:0.75):0.25[INT2],5:1):0[INT1];
+End;

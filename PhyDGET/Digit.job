@@ -1,0 +1,25 @@
+# PhyDGET Job Command File
+--data 00.Emu.counts.txt
+--tree nexus.txt
+--threads 6
+--transform log2cpm
+--model MO:Ostrich
+--model MS:Siamese
+--model MT:Turtle
+--model ME:Emu
+--model MC:Chicken
+--model MOE:Ostrich+Emu
+--model MEC:Emu+Chicken
+--model MOC:Ostrich+Chicken
+--model MBirds:Ostrich+Emu+Chicken
+--model MST:Siamese+Turtle
+--sample Ostrich:OstrichE1,OstrichE2
+--sample Siamese:SiameseE1,SiameseE2
+--sample Turtle:TurtleE1,TurtleE2
+--sample Emu:EmuE1,EmuE2
+--sample Chicken:ChickenE1,ChickenE2
+#--verbose
+--out 01.phy.out
+--bt-exec BayesTraitsV3
+#--test-gene TMC2
+#--test-gene FLNB
