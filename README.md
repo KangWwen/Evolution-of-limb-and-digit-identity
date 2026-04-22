@@ -23,6 +23,7 @@ Processed input files used directly by figure scripts are provided in
 the `/InputFiles` folder.
 
 ## Repository Structure
+```
 ├── Alignment.sh                      # Read alignment pipeline (raw FASTQ → BAM/counts)
 ├── CellRangerPipelines.sh            # Cell Ranger pipeline for scRNA-seq data
 ├── DEGs.r                            # Differential expression analysis (DESeq2/edgeR)
@@ -48,7 +49,7 @@ the `/InputFiles` folder.
 ├──── Fig3c Filtered GO Enrichment of MFGs.R
 ├──── Fig3d&3e scRNA-seq Plot Markers.R
 └── Supplementary Figures/
----
+```
 
 ## How to Run
 
