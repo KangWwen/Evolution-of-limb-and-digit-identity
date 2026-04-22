@@ -1,3 +1,5 @@
+#Input files are in Tau_inEachSpecies folder. 
+#The file name to the species names are: Chi(chicken);Axm(axolotl);Ost(ostrich);Mm(Mouse);Tur(Turtle);Cor(crocodile)
 library(dplyr)
 library(tidyr)
 library(stringr)
@@ -35,7 +37,6 @@ MINgenes_processed <- MINgenes %>%
   rowwise() %>%
   mutate(Counts = process_cell(Tau_names))
 
-orth <- readRDS("orth.rds")
 orth_genes <- orth$AllGenes
 
 MAXgenes_orth <- MAXgenes_processed[MAXgenes_processed$gene %in% orth_genes,]
@@ -51,7 +52,6 @@ for (spec in species_list) {
   combined <- rbind.data.frame(max_subset, min_subset)
   results[[spec]] <- combined
 }
-LBGs <- read.csv("00.All_LBGs.csv")
 
 matrix_list <- list(Tur_filtered, Cor_filtered, Chi_filtered, Emu_filtered, Ost_filtered)
 matrix_names <- c( "Tur", "Cor", "Chi", "Emu", "Ost")

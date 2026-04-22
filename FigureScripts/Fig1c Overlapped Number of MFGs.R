@@ -1,10 +1,12 @@
+#Input files are in Tau_inEachSpecies folder. 
+#The file name to the species names are: Chi(chicken);Axm(axolotl);Ost(ostrich);Mm(Mouse);Tur(Turtle);Cor(crocodile)
 library(RColorBrewer)
 library(pheatmap)
 file_names <- c("eChiF","lChiF","eEmuF","lEmuF",
                 "eEmuH","lEmuH","eOstF","lOstF",
                 "eAxmF", "lAxmF", "eChiH","lChiH",   
                 "eAxmH","lAxmH","eCorF","eCorH",
-                "lCorF","lCorH","eAcF","eAmF","lAmF","eMmF",
+                "lCorF","lCorH","eAcF","eMmF",
                 "eTurF","lTurF","eTurH",
                 "lTurH","eOstH","lOstH")
 for (name in file_names) {
@@ -14,7 +16,7 @@ for (name in file_names) {
 pairs <- list(c("eChiF","lChiF"), c("eEmuF","lEmuF"), c("eEmuH","lEmuH"), 
               c("eOstF","lOstF"), c("eAxmF", "lAxmF"), c("eChiH","lChiH"),
               c("eAxmH","lAxmH"), c("eCorF","lCorF"), c("eCorH","lCorH"),  
-              c("eAmF","lAmF"), c("eTurF","lTurF"), c("eTurH", "lTurH"),
+              c("eTurF","lTurF"), c("eTurH", "lTurH"),
               c("eOstH","lOstH"))
 
 # Merge each pair

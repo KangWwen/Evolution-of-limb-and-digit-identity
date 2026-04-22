@@ -1,9 +1,10 @@
+#Input files are in Tau_inEachSpecies folder. 
 
 library(ggplot2)
 library(gridExtra)
 library(reshape2)
 
-df <- read.csv("./heatmaps/05.PickStage_forHeatmap_allLimbGenes_Orders.csv",row.names = 1)
+df <- read.csv("PickStage_forHeatmap_allLimbGenes_Orders.csv",row.names = 1)
 df_forelimb <- df[, grepl("^...F", names(df))]
 df_hindlimb <- df[, grepl("^...H", names(df))]
 

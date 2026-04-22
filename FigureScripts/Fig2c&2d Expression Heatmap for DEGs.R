@@ -1,3 +1,6 @@
+#Input files are in Average_TPM folder. 
+#The file name to the species names are: Chi(chicken);Axm(axolotl);Ost(ostrich);Mm(Mouse);Tur(Turtle);Cor(crocodile)
+
 library(dplyr)
 library(stringr)
 library(tidyverse)

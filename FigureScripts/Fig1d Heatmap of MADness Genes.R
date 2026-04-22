@@ -1,6 +1,8 @@
+#Input files are in Average_TPM folder. 
+#The file name to the species names are: Chi(chicken);Axm(axolotl);Ost(ostrich);Mm(Mouse);Tur(Turtle);Cor(crocodile)
 library(dplyr)
 library(stringr)
-file_names <- c("Axm","Mm", "Ac","Tur","Am", "Cor","Chi", "Emu", "Ost")
+file_names <- c("Axm","Mm","Tur","Am", "Cor","Chi", "Emu", "Ost")
 
 for (name in file_names) {
   assign(name, read.table(paste0("03.", name, "_AV_TPM.txt"), sep = "\t", row.names = 1, header = TRUE))

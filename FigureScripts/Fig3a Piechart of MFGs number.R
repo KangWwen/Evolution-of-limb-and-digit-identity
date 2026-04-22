@@ -1,3 +1,6 @@
+#Input files are in Tau_inEachSpecies folder. 
+#The file name to the species names are: Chi(chicken);Axm(axolotl);Ost(ostrich);Mm(Mouse);Tur(Turtle);Cor(crocodile)
+
 library(dplyr)
 library(tidyr)
 library(stringr)
