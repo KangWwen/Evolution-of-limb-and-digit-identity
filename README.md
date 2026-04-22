@@ -57,14 +57,14 @@ the `/InputFiles` folder.
 raw sequencing reads would be found through Data Availability Accession
 bash Alignment.sh             # Align bulk RNA-seq reads; generates count matrices
 
-##	Pre-computed processed files are already available in `/InputFiles` 
+###	Pre-computed processed files are already available in `/InputFiles` 
 Differential expression and Tau calculation
 DEGs.r
 TauValueCaculationFunction.r
 Output files from these scripts are pre-computed and provided in 
 `/InputFiles/Tau_inEachSpecies`.
 
-##	Generate figures
+###	Generate figures
 Each script in `/FigureScripts` reads input files directly from 
 `/InputFiles`. Run scripts individually in R to reproduce the 
 corresponding figure panels.
